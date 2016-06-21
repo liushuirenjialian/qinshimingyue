@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=640,target-densitydpi=320, minimum-scale=0.5, maximum-scale=2,user-scalable=0">
+    <meta name="keywords" content="模板">
+    <meta name="description" content="模板 ">
+    <meta name="author" content="lizzy">
+    <!-- <meta HTTP-EQUIV="Pragma" CONTENT="no-cache"> -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>胡莱三国 无双版</title>
+    <link rel="stylesheet" type="text/css" href="css/homepage.css">
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/homepage.js"></script>
+</head>
+
+<body class="home">
+    <div class="nav">
+        <a href="#" class="logo"></a>
+        <!-- <img src="images/homepage/logo.jpg" alt="" class="logo"> -->
+        <!-- <a href="#" class="dl">游戏下载</a> -->
+    </div>
+    <div class="bg">
+        <div class="dl">
+            <a href="#" class="ios">ios下载</a>
+            <a href="#" class="android">android下载</a>
+        </div>
+    </div>    
+    <div class="gameinfo">
+        <h2 class="title"><span>游戏介绍</span></h2>
+        <!-- <a href="#" class="btn">英雄介绍</a> -->
+        <!-- tab 点击切换部分begin-->
+        <div class="info_bg">
+        <img src="images/homepage/bg2.jpg" alt="武将介绍">
+           <div class="jieshao_bg">
+           <li><a href="JavaScript:;" class="cur" >武将</a></li>
+           <li><a href="JavaScript:;">宝物</a></li>
+           <li><a href="JavaScript:;">美人</a></li>
+           <li><a href="JavaScript:;">实时对战</a></li>
+           </div>
+        </div>
+        <script type="text/javascript">
+            $('div.info_bg').on('click','li',function(){ 
+                // 忘记siblings ：去除所有除去当前的 的li      
+//数组中的数据存成对象放到数组里,然后取的时候拿到li的下标值，对应去取数组中相应下标值中的对象里面的参数数据赋值到蒙层上就行了
+// [,,,]  标记li数据的序号，把筛选出来的数据缓存到全局变量中去，点击事件中获取当前的li的序号对应给缓存的[];
+                $(this).find('a').addClass('cur').parent('li').siblings('li').children('a').removeClass('cur');
+                var $index=$('div.jieshao_bg').find('li').index($(this));
+                console.log($index);
+                  $('div.info_bg img').attr('src','images/homepage/bg2.jpg');
+                if($index==1){
+                    $('div.info_bg img').attr('src','images/homepage/logo.jpg');
+
+                }else if($index==2){
+                    $('div.info_bg img').attr('src','images/homepage/bg2.jpg');
+
+                }
+                else if($index==3){
+                    $('div.info_bg img').attr('src','images/homepage/bg.jpg');
+
+                }
+            })
+        </script>
+         <!-- tab 点击切换部分end-->
+    </div>
+    <div class="news">
+        <ul class="title">
+            <li><a href="javascript:void(0)" class="current">最新</a></li>
+            <li><a href="javascript:void(0)">新闻</a></li>
+            <li><a href="javascript:void(0)">公告</a></li>
+            <li><a href="javascript:void(0)">活动</a></li>
+        </ul>
+        <div class="contents">
+            <!-- <ul class="content current">
+                <li>
+                    <span class="mark">[新闻]</span><a href="newsContent.html">亿元先生或联手火箭旧将亿元先生或联手火箭旧将亿元先生或联手火箭旧将</a><span class="time">01-18</span>
+                </li>
+                <li>
+                    <span class="mark">[新闻]</span><a href="newsContent.html">亿元先生或联手火箭旧将</a><span class="time">01-18</span>
+                </li>
+                <li>
+                    <span class="mark">[新闻]</span><a href="newsContent.html">亿元先生或联手火箭旧将</a><span class="time">01-18</span>
+                </li>
+                <li>
+                    <span class="mark">[新闻]</span><a href="newsContent.html">亿元先生或联手火箭旧将</a><span class="time">01-18</span>
+                </li>
+            </ul>
+            <ul class="content"></ul>
+            <ul class="content"></ul>
+            <ul class="content"></ul> -->
+        </div>
+        <a href="newsList.html" class="more">更多</a>
+    </div>
+    <ul class="btns">
+        <li><a class="weixin" href="#">微信</a></li>
+        <li><a class="weibo" href="#">微博</a></li>
+        <li><a class="tieba" href="#">贴吧</a></li>
+        <li><a class="qq" href="#">qq</a></li>
+    </ul>
+    <div class="foot">
+        <p>
+            Copyright @2015 Hoolai Game ALL rights reserved.  
+        </p>
+        <p>互爱互动（北京）科技有限公司版权所有</p>
+        <!-- <p>
+            京ICP备11034336号-1 网络文化经营许可证-文网文[2011]0744-272号
+        </p> -->
+    </div>
+</body>
+
+</html>

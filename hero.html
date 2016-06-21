@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"> -->
+    <meta name="viewport" content="width=640,target-densitydpi=320, minimum-scale=0.5, maximum-scale=2,user-scalable=0">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- Demo styles -->
+    <style>
+    body {
+        width: 640px;
+        background: #fff;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+    
+    div.nav {
+        width: 640px;
+        height: 90px;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 10
+    }
+    
+    div.nav a.logo {
+        background: url(images/homepage/logo.jpg) no-repeat top center;
+        margin-top: 20px;
+        margin-left: 30px;
+        display: block;
+        width: 80px;
+        height: 52px;
+        float: left
+    }
+    
+    div.nav a.dl {
+        float: right;
+        margin-right: 30px;
+        background: url(images/homepage/dl.jpg) no-repeat center center;
+        margin-top: 20px;
+        display: block;
+        width: 140px;
+        height: 48px;
+        text-indent: -999px
+    }
+    
+    .swiper-container {
+        width: 100%;
+        padding-top: 175px;
+        padding-bottom: 50px;
+    }
+    
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 500px;
+        height: 800px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="#" class="logo"></a>
+        <!-- <img src="images/homepage/logo.jpg" alt="" class="logo"> -->
+        <!-- <a href="#" class="dl">游戏下载</a> -->
+    </div>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(images/heros/1.jpeg)">火柴人</div>
+            <div class="swiper-slide" style="background-image:url(images/heros/2.jpeg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/heros/3.jpeg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/heros/4.jpeg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/heros/5.jpeg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/heros/6.jpeg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/heros/7.jpeg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/heros/8.jpeg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/heros/9.jpeg)"></div>
+            <!-- <div class="swiper-slide" style="background-image:url(images/1.jpeg0)"></div> -->
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true
+        }
+    });
+    </script>
+</body>
+
+</html>
