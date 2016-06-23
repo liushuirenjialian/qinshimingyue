@@ -70,7 +70,7 @@ aysncFetcheNews.prototype = {
                     o.showVideo();
                     o.hideVideo();
                 }
-                // o.setStyle();				
+                // o.setStyle();                
             }
         });
         this.changeVideoContent();
@@ -218,8 +218,8 @@ aysncFetcheNews.prototype = {
         });
         // this.elem.find('ul.content.current').css('display','block');
         // this.elem.find('ul.content').find('li').css({
-        // 	height: '35px',
-        // 	width: '95%',
+        //  height: '35px',
+        //  width: '95%',
 
         // });
     },
@@ -467,8 +467,8 @@ $(function() {
     $('div.bg').css('height',height+'px');
 
     var options = {
-        parent_cat:260, 
-        children_cat:[261, 262, 263, 264],
+        parent_cat: 170,
+        children_cat: [175, 174, 172, 173],
         video_parent_cat: 195,
         video_children_cat: [196, 197, 198],
         title_mark: ['最新', '新闻', '公告', '活动'],

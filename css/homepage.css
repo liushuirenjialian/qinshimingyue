@@ -1,1 +1,388 @@
-html,body,div,ul,li,a,img,h1,h2,h3,h4,h5,p{margin:0;padding:0}ul,li{list-style:none}img{border:none}a{text-decoration:none}body{font-family:"Microsoft Yahei",Arial,helvetica,sans_serif;font-weight:normal}div.nav{width:640px;height:90px;background:rgba(0,0,0,0.5);overflow:hidden;position:fixed;top:0;left:0;z-index:10}div.nav a.logo{background:url(../images/homepage/logo.jpg) no-repeat top center;margin-top:20px;margin-left:30px;display:block;width:80px;height:52px;float:left}div.nav a.dl{float:right;margin-right:30px;background:url(../images/homepage/dl.jpg) no-repeat center center;margin-top:20px;display:block;width:140px;height:48px;text-indent:-999px}div.foot{color:#272727;font-size:22px;width:100%;background-color:#111417;height:150px}div.foot p{line-height:35px;text-align:center;color:#272727;font-size:22px}.home{width:640px}.home h2{text-indent:-9999px;width:100%;height:80px;line-height:80px;background:url(../images/homepage/title_bg.jpg) no-repeat center center}.home h2 span{font-size:34px;color:#413f3f;margin-left:30px}.home div.bg{width:100%;height:300px;background:#e2ddda url(../images/homepage/bg.jpg) no-repeat top center;position:relative}.home div.bg div.dl{width:100%;height:140px;position:absolute;bottom:0;left:0}.home div.bg div.dl a{text-indent:-999px;margin-top:40px;display:inline-block;width:180px;height:60px}.home div.bg div.dl a.ios{margin-left:92px;background:url(../images/homepage/ios.jpg) no-repeat 0 0}.home div.bg div.dl a.android{margin-left:60px;background:url(../images/homepage/android.jpg) no-repeat 0 0}.home div.gameinfo{height:480px;width:100%;border-bottom:3px solid #c2c2c2;position:relative}.home div.gameinfo div.info_bg{width:640px;height:401px;background-color:#1e2e3e}.home div.gameinfo div.info_bg img{width:640px;height:290px}.home div.gameinfo div.info_bg div.jieshao_bg{background:url(../images/homepage/jieshao_bar.jpg) no-repeat;width:640px;height:113px}.home div.gameinfo div.info_bg li{margin:15px;display:inline-block}.home div.gameinfo div.info_bg li a{text-align:center;line-height:60px;color:#a4a4a4;font-size:20px;background:url(../images/homepage/wujiang.png) no-repeat;width:124px;height:60px;text-decoration:none;display:inline-block}.home div.gameinfo div.info_bg li a.cur{text-align:center;line-height:60px;color:#212121;font-size:20px;display:inline-block;width:124px;height:60px;background:url(../images/homepage/cur.png) no-repeat}.home div.gameinfo a.btn{text-indent:-999px;width:180px;height:60px;display:block;position:absolute;bottom:30px;left:50%;margin-left:-90px;background:url(../images/homepage/hero.jpg) no-repeat 0 0}.home div.news{width:100%;height:435px;overflow:hidden;position:relative;background-color:#202224}.home div.news h2 span{display:block;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;color:#000;font-size:30px;line-height:80px;padding:0 20px}.home div.news ul.title{overflow:hidden}.home div.news ul.title li{float:left;margin-left:40px}.home div.news ul.title li a{font-size:32px;color:#4a89b5;line-height:80px}.home div.news ul.title li a.current,.home div.news ul.title li a:hover{color:#f00}.home div.news div.contents{width:100%;height:270px;position:relative}.home div.news div.contents ul.content{position:absolute;display:none;top:0;left:0}.home div.news div.contents ul.content li{line-height:52px;padding:0 25px;font-size:28px;color:#fff;display:block;overflow:hidden}.home div.news div.contents ul.content li span.mark{margin-right:20px;float:left}.home div.news div.contents ul.content li span.time{margin-left:20px;float:right}.home div.news div.contents ul.content li a{font-size:28px;color:#595959;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;width:410px;display:inline-block}.home div.news div.contents ul.content li a:hover{color:#f00}.home div.news div.contents ul.content.current{display:block}.home div.news a.more{position:absolute;top:30px;right:20px;font-size:25px;color:#666}.home ul.btns{width:100%;height:130px;background-color:#111417;overflow:hidden}.home ul.btns li{float:left;margin-left:60px}.home ul.btns li a{display:inline-block;width:88px;height:88px;text-indent:-999px;margin-top:20px}.home ul.btns li a.weixin{background:url(../images/homepage/weixin.png) no-repeat center center}.home ul.btns li a.weibo{background:url(../images/homepage/weibo.png) no-repeat center center}.home ul.btns li a.tieba{background:url(../images/homepage/tieba.png) no-repeat center center}.home ul.btns li a.qq{background:url(../images/homepage/qq.png) no-repeat center center}body.news_content{width:640px}body.news_content div.bg{width:100%;height:300px;background:url(../images/homepage/bg.jpg) no-repeat top center}body.news_content div.wrap{border-bottom:3px solid #ddd}body.news_content div.wrap div.contents h2{color:#000;font-size:33px;margin-top:35px;margin-left:20px;margin-bottom:20px}body.news_content div.wrap div.contents h5{color:#9f9f9f;font-size:24px;margin-left:20px;line-height:40px}body.news_content div.wrap div.contents div.content{color:#000;font-size:28px;margin-top:35px;line-height:50px;padding:20px}body.news_content div.wrap a.top{width:88px;height:88px;margin:20px auto 40px auto;display:block;background:url(../images/list/top.png) no-repeat center center}body.news_list{width:640px}body.news_list div.bg{width:100%;height:300px;background:url(../images/homepage/bg.jpg) no-repeat top center}body.news_list div.wrap{width:100%;margin-top:20px;overflow:hidden;padding-bottom:40px;border-bottom:3px solid #ddd}body.news_list div.wrap ul.title{overflow:hidden}body.news_list div.wrap ul.title li{float:left;margin-left:40px}body.news_list div.wrap ul.title li a{font-size:32px;color:#4a89b5;line-height:80px}body.news_list div.wrap ul.title li a.current,body.news_list div.wrap ul.title li a:hover{color:#f00}body.news_list div.wrap div.contents{margin-top:10px;width:100%}body.news_list div.wrap div.contents ul.content{display:none}body.news_list div.wrap div.contents ul.content li{line-height:52px;padding:0 25px;font-size:28px;color:#000;display:block;overflow:hidden}body.news_list div.wrap div.contents ul.content li span.time{margin-left:20px;float:right}body.news_list div.wrap div.contents ul.content li a{font-size:28px;color:#595959;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;width:490px;display:inline-block}body.news_list div.wrap div.contents ul.content li a:hover{color:#f00}body.news_list div.wrap div.contents ul.content.current{display:block}
+html,
+body,
+div,
+ul,
+li,
+a,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+ul,
+li {
+  list-style: none;
+}
+img {
+  border: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Microsoft Yahei", Arial, helvetica, sans_serif;
+  font-weight: normal;
+}
+div.nav {
+  width: 640px;
+  height: 90px;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+}
+div.nav a.logo {
+  background: url(../images/homepage/logo.jpg) no-repeat top center;
+  margin-top: 20px;
+  margin-left: 30px;
+  display: block;
+  width: 80px;
+  height: 52px;
+  float: left;
+}
+div.nav a.dl {
+  float: right;
+  margin-right: 30px;
+  background: url(../images/homepage/dl.jpg) no-repeat center center;
+  margin-top: 20px;
+  display: block;
+  width: 140px;
+  height: 48px;
+  text-indent: -999px;
+}
+div.foot {
+  color: #272727;
+  font-size: 22px;
+  width: 100%;
+  background-color: #111417;
+  height: 150px;
+}
+div.foot p {
+  line-height: 35px;
+  text-align: center;
+  color: #272727;
+  font-size: 22px;
+}
+.home {
+  width: 640px;
+}
+.home h2 {
+  text-indent: -9999px;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  background: url(../images/homepage/title_bg.jpg) no-repeat center center;
+}
+.home h2 span {
+  font-size: 34px;
+  color: #413f3f;
+  margin-left: 30px;
+}
+.home div.bg {
+  width: 100%;
+  height: 300px;
+  background: #e2ddda url(../images/homepage/bg.jpg) no-repeat top center;
+  position: relative;
+}
+.home div.bg div.dl {
+  width: 100%;
+  height: 140px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.home div.bg div.dl a {
+  text-indent: -999px;
+  margin-top: 40px;
+  display: inline-block;
+  width: 180px;
+  height: 60px;
+}
+.home div.bg div.dl a.ios {
+  margin-left: 92px;
+  background: url(../images/homepage/ios.png) no-repeat 0 0;
+}
+.home div.bg div.dl a.android {
+  margin-left: 60px;
+  background: url(../images/homepage/android.png) no-repeat 0 0;
+}
+.home div.gameinfo {
+  height: 480px;
+  width: 100%;
+  border-bottom: 3px solid #c2c2c2;
+  position: relative;
+}
+.home div.gameinfo div.info_bg {
+  width: 640px;
+  height: 401px;
+  background-color: #1e2e3e;
+}
+.home div.gameinfo div.info_bg img {
+  width: 640px;
+  height: 290px;
+}
+.home div.gameinfo div.info_bg div.jieshao_bg {
+  background: url(../images/homepage/jieshao_bar.jpg) no-repeat;
+  width: 640px;
+  height: 113px;
+}
+.home div.gameinfo div.info_bg li {
+  margin: 15px;
+  display: inline-block;
+}
+.home div.gameinfo div.info_bg li a {
+  text-align: center;
+  line-height: 60px;
+  color: #a4a4a4;
+  font-size: 20px;
+  background: url(../images/homepage/wujiang.png) no-repeat;
+  width: 124px;
+  height: 60px;
+  text-decoration: none;
+  display: inline-block;
+}
+.home div.gameinfo div.info_bg li a.cur {
+  text-align: center;
+  line-height: 60px;
+  color: #212121;
+  font-size: 20px;
+  display: inline-block;
+  width: 124px;
+  height: 60px;
+  background: url(../images/homepage/cur.png) no-repeat;
+}
+.home div.gameinfo a.btn {
+  text-indent: -999px;
+  width: 180px;
+  height: 60px;
+  display: block;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -90px;
+  background: url(../images/homepage/hero.jpg) no-repeat 0 0;
+}
+.home div.news {
+  width: 100%;
+  height: 435px;
+  overflow: hidden;
+  position: relative;
+  background-color: #202224;
+}
+.home div.news h2 span {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #000;
+  font-size: 30px;
+  line-height: 80px;
+  padding: 0px 20px;
+}
+.home div.news ul.title {
+  overflow: hidden;
+}
+.home div.news ul.title li {
+  float: left;
+  margin-left: 40px;
+}
+.home div.news ul.title li a {
+  font-size: 32px;
+  color: #4a89b5;
+  line-height: 80px;
+}
+.home div.news ul.title li a.current,
+.home div.news ul.title li a:hover {
+  color: #ddd;
+}
+.home div.news div.contents {
+  width: 100%;
+  height: 270px;
+  position: relative;
+}
+.home div.news div.contents ul.content {
+  position: absolute;
+  display: none;
+  top: 0px;
+  left: 0px;
+}
+.home div.news div.contents ul.content li {
+  line-height: 52px;
+  padding: 0px 25px;
+  font-size: 28px;
+  color: #4D4B4B;
+  display: block;
+  overflow: hidden;
+}
+.home div.news div.contents ul.content li span.mark {
+  margin-right: 20px;
+  float: left;
+}
+.home div.news div.contents ul.content li span.time {
+  margin-left: 20px;
+  float: right;
+}
+.home div.news div.contents ul.content li a {
+  font-size: 28px;
+  color: #595959;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 410px;
+  display: inline-block;
+}
+.home div.news div.contents ul.content li a:hover {
+  color: #ddd;
+}
+.home div.news div.contents ul.content.current {
+  display: block;
+}
+.home div.news a.more {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  font-size: 25px;
+  color: #666;
+}
+.home ul.btns {
+  width: 100%;
+  height: 130px;
+  background-color: #111417;
+  /*    border-top: 3px solid #c2c2c2;
+     border-bottom: 3px solid #c2c2c2; */
+  overflow: hidden;
+}
+.home ul.btns li {
+  float: left;
+  margin-left: 60px;
+}
+.home ul.btns li a {
+  display: inline-block;
+  width: 88px;
+  height: 88px;
+  text-indent: -999px;
+  margin-top: 20px;
+}
+.home ul.btns li a.weixin {
+  background: url(../images/homepage/weixin.png) no-repeat center center;
+}
+.home ul.btns li a.weibo {
+  background: url(../images/homepage/weibo.png) no-repeat center center;
+}
+.home ul.btns li a.tieba {
+  background: url(../images/homepage/tieba.png) no-repeat center center;
+}
+.home ul.btns li a.qq {
+  background: url(../images/homepage/qq.png) no-repeat center center;
+}
+body.news_content {
+  width: 640px;
+  background-color: #000;
+}
+body.news_content div.bg {
+  width: 100%;
+  height: 400px;
+  background: #ffffff url(../images/homepage/bg.jpg) no-repeat top center;
+}
+body.news_content div.wrap div.contents {
+  background-color: #000;
+}
+body.news_content div.wrap div.contents h2 {
+  text-align: center;
+  color: #595959;
+  font-size: 33px;
+  margin-top: 35px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+body.news_content div.wrap div.contents h5 {
+  color: #9f9f9f;
+  font-size: 24px;
+  margin-left: 20px;
+  line-height: 40px;
+}
+body.news_content div.wrap div.contents div.content {
+  color: #595959;
+  font-size: 28px;
+  margin-top: 35px;
+  line-height: 50px;
+  padding: 20px;
+}
+body.news_content div.wrap a.top {
+  width: 88px;
+  height: 88px;
+  margin: 20px auto 40px auto;
+  display: block;
+  background: url(../images/list/top.png) no-repeat center center;
+}
+body.news_list {
+  width: 640px;
+}
+body.news_list div.bg {
+  width: 100%;
+  height: 400px;
+  background: url(../images/homepage/bg.jpg) no-repeat top center;
+}
+body.news_list div.wrap {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 40px;
+  background-color: #000;
+}
+body.news_list div.wrap ul.title {
+  overflow: hidden;
+}
+body.news_list div.wrap ul.title li {
+  float: left;
+  margin-left: 50px;
+}
+body.news_list div.wrap ul.title li a {
+  font-size: 32px;
+  color: #4a89b5;
+  line-height: 80px;
+}
+body.news_list div.wrap ul.title li a.current,
+body.news_list div.wrap ul.title li a:hover {
+  color: #ddd;
+}
+body.news_list div.wrap div.contents {
+  margin-top: 10px;
+  width: 100%;
+}
+body.news_list div.wrap div.contents ul.content {
+  display: none;
+}
+body.news_list div.wrap div.contents ul.content li {
+  line-height: 52px;
+  padding: 0px 25px;
+  font-size: 28px;
+  color: #000;
+  display: block;
+  overflow: hidden;
+}
+body.news_list div.wrap div.contents ul.content li span.time {
+  margin-left: 20px;
+  float: right;
+}
+body.news_list div.wrap div.contents ul.content li a {
+  font-size: 28px;
+  color: #595959;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 490px;
+  display: inline-block;
+}
+body.news_list div.wrap div.contents ul.content li a:hover {
+  color: #ddd;
+}
+body.news_list div.wrap div.contents ul.content.current {
+  display: block;
+}

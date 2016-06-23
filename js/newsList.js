@@ -219,8 +219,8 @@ $(function() {
 		
 	// };
 	var options = {
-		parent_cat:260, 
-        children_cat:[261, 262, 263, 264],
+		parent_cat: 170,
+        children_cat: [175, 174, 172, 173],
 		current: window.location.search,
 		title_mark:['最新消息','新闻','公告','活动'], 
 	
