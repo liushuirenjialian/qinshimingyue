@@ -1,0 +1,282 @@
+// reset
+
+/*= reset begin*/
+
+body,
+div,
+p,
+img,
+a,
+ul,
+li,
+h4 {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    /*text-indent: -99999px;*/
+}
+
+a:hover {
+    /*text-decoration: underline;*/
+}
+
+body {
+    position: relative;
+    font: 62.5% "Microsoft YaHei", Arial;
+    .forms_t {
+        font-size: 20px;
+        color: red;
+    }
+    .wrap {
+        background: url(../img/bg.jpg) no-repeat;
+        width: 640px;
+        height: 1190px;
+        margin: 0 auto;
+        .hov {
+            cursor: pointer;
+        }
+        .content {
+            position: relative;
+            // width:851px;
+            height: 150px;
+            bottom: -848px;
+            // border:1px solid red;
+            .pos {
+                position: absolute;
+            }
+            .yuyue {
+                background: url(../img/yuyue.png) no-repeat;
+                width: 225px;
+                height: 112px;
+                left: 91px;
+            }
+            .weixin {
+                background: url(../img/of_wexin.png) no-repeat;
+                width: 216px;
+                height: 51px;
+                left: 329px;
+            }
+            .qq {
+                background: url(../img/qq.png) no-repeat;
+                width: 216px;
+                height: 51px;
+                left: 329px;
+                top: 50px;
+            }
+            .iosdown {
+                background: url(../img/ios.png) no-repeat;
+                width: 196px;
+                height: 68px;
+                left: 119px;
+                top: 222px;
+            }
+            .andrdown {
+                background: url(../img/and.png) no-repeat;
+                width: 196px;
+                height: 68px;
+                  left: 326px;
+    top: 219px;
+            }
+        }
+    }
+    .weixin_sec {
+        background: url(../img/wanjiaqun.png) no-repeat;
+        width: 360px;
+        height: 368px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-left: -180px;
+        margin-top: -184px;
+        .close_weixin {
+            background: url(../img/close_but.jpg) no-repeat;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            display: inline-block;
+            right: 15px;
+            top: 23px;
+            // border: 1px solid red;
+        }
+        span.letter {
+            text-align: center;
+            font-size: 20px;
+            color: #5b2222;
+            top: 30px;
+            position: absolute;
+            left: 100px;
+        }
+        img {
+            position: absolute;
+            top: 91px;
+            left: 54px;
+            width: 256px;
+            height: 252px;
+        }
+    }
+    .ios_swc {
+        background: url(../img/ios_bg.png) no-repeat;
+        width: 574px;
+        height: 350px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-left: -287px;
+        margin-top: -175px;
+        .close_weixin {
+            background: url(../img/close_but.jpg) no-repeat;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            display: inline-block;
+            right: 15px;
+            top: 155px;
+        }
+        span.letter {
+              
+    font-size: 20px;
+    color: #5b2222;
+    top: 191px;
+    position: absolute;
+    left: 18px;
+    width: 540px;
+    height: 166px;
+    line-height: 32px;
+        }
+    }
+    .yuyuew {
+        background: url(../img/yuyue_tan.png) no-repeat;
+        width: 574px;
+        height: 367px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-left: -287px;
+        margin-top: -183.5px;
+        .pul {
+            font-size: 21px;
+            color: #56120a;
+        }
+        .one {
+            position: absolute;
+            top: 121px;
+            left: 90px;
+            input.enter_phone {
+                background-color: #ffffd9;
+                width: 321px;
+                height: 51px;
+                border-color: #ffffd8;
+                border-radius: 5px;
+                box-shadow: 2px 3px 7px #F4F7BE;
+                text-align: center;
+                font-size: 21px;
+                border: 1px solid rgba(189, 177, 177, .05);
+            }
+        }
+        .two {
+            position: absolute;
+            top: 185px;
+            left: 90px;
+            input.modify_sys {
+                background-color: #ffffd9;
+                width: 321px;
+                height: 51px;
+                border-color: #ffffd8;
+                border-radius: 5px;
+                box-shadow: 2px 3px 7px #F4F7BE;
+                text-align: center;
+                font-size: 21px;
+                border: 1px solid rgba(189, 177, 177, .05);
+            }
+            .ios {
+                position: absolute;
+                top: 11px;
+                left: 139px;
+                color: #56120a;
+                font-size: 16px;
+                .ios_tit {
+                    position: absolute;
+                    top: 0;
+                    left: 41px;
+                    font-size: 20px;
+                }
+            }
+            .android {
+                position: absolute;
+                top: 10px;
+                left: 280px;
+                color: #56120a;
+                font-size: 16px;
+                .and_tit {
+                    position: absolute;
+                    top: 1px;
+                    left: 39px;
+                    width: 40px;
+                }
+            }
+        }
+        input.but {
+            background: url(../img/but.png) no-repeat;
+            width: 112px;
+            height: 48px;
+            position: absolute;
+            top: 257px;
+            left: 232px;
+            border: 1px solid transparent;
+        }
+        .close {
+            background: url(../img/close_but.jpg) no-repeat;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            display: inline-block;
+            right: 15px;
+            top: 23px;
+            // border: 1px solid red;
+        }
+        #getGift {
+            /* position: absolute; */
+            /* top: 322px; */
+            /* left: 276px; */
+            text-align: center;
+            color: #978483;
+            margin-top: 321px;
+        }
+    }
+    .gongxi {
+        z-index: 99999;
+        background: url(../img/gongxi.png) no-repeat;
+        width: 576px;
+        height: 367px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-left: -288px;
+        margin-top: -184px;
+        .close_weixin {
+            // background: url(../img/close_but.jpg) no-repeat;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            display: inline-block;
+            right: 19px;
+            top: 15px;
+            // border: 1px solid red;
+            cursor: pointer;
+        }
+    }
+}
