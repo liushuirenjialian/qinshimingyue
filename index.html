@@ -6,7 +6,7 @@
     <title>《秦时明月3D》手游官网</title>
     <meta name="keywords" content="预约抢码 官方微信 玩家QQ群 ios下载 安卓下载">
     <meta author='heyanfang'>
-     <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
     <meta name="decriptions" content="十年燃一秦 合纵战连横">
     <meta name="viewport" content="width=640,user-scalable=no">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,64 +14,65 @@
     <link rel="stylesheet" type="text/css" href="css/homepage.css">
     <link rel="stylesheet" type="text/css" href="css/style2.css">
 </head>
-<body>
+
+<body id="xxx">
     <div class="wrap">
         <section>
             <div class="content">
-                <div class="yuyue pos hov"></div>
-                <div class="weixin pos hov"></div>
-                <div class="qq pos hov"></div>
-                <div class="iosdown pos hov"></div>
-                <div class="andrdown pos hov"></div>
+                <div class="yuyue pos hov" @click="yuyueCli"></div>
+                <div class="weixin pos hov" @click="butCli"></div>
+                <div class="qq pos hov" @click="butCli"></div>
+                <div class="iosdown pos hov" ></div>
+                <div class="andrdown pos hov" ></div>
             </div>
         </section>
     </div>
     <!-- mengceng-->
     <div class="mengceng"></div>
     <!-- tan -->
-    <div class="weixin_sec" id="weixins" style="display:none;">
+    <div class="weixin_sec" id="weixins" v-show="ok">
         <div class="close_weixin hov"></div>
         <span class="letter">官方微信公众号<br/> 秦时明月3D手游版</span>
         <img src="img/weixin.png" alt="weixin">
     </div>
     <!-- wanjiaqq -->
-    <div class="weixin_sec" id="wanjia" style="display:none;">
+     <div class="weixin_sec" id="wanjia" v-show="ok">
         <div class="close_weixin hov"></div>
         <span class="letter">官方玩家交流QQ群
-<br/>  304050777</span>
+        <br/>  304050777</span>
         <img src="img/wanjiaqun_ma.png" alt="weixin">
     </div>
     <!-- ios download -->
-    <div class="ios_swc" style="display:none;">
+    <!-- <div class="ios_swc" style="display:none;">
         <div class="close_weixin hov"></div>
         <span class="letter">游戏下载即将开启，通过官网完成游戏预约在首测时可获得首测超值豪礼<br/>  同时，关注官方微信、加入官方QQ交流群，可第一时间获取游戏最新资讯</span>
-    </div>
+    </div> -->
     <!-- gongxi -->
-    <div style="display:none;" class="gongxi" style="display:block;">
-        <div class="close_weixin hov"></div>
-        <!-- <span class="letter">游戏下载即将开启，请进行游戏预约，<br/>  或关注官方微信、加入玩家群，第一时间获得资讯</span> -->
+    <div v-show="ok" class="gongxi">
+        <div class="close_weixin hov" @click="closeCli"></div>
     </div>
     <!-- yuyue -->
-    <form style="display:none;">
+    <form v-cloak v-show="show">
         <div class="yuyuew">
             <div class="yuyuexinxi">
-                <div class="close hov"></div>
+                <div class="close hov" @click="closeCli"></div>
                 <div class="one">
                     <span class="pul">手机号码</span>
-                    <input class="enter_phone" type="text" placeholder="请输入正确的手机号码" maxlength="11"></input>
+                    <input class="enter_phone" type="text" placeholder="请输入正确的手机号码" maxlength="11" v-model="phone"></input>
                 </div>
                 <div class="two"> <span class="pul"> 选择系统</span>
                     <!-- 外围框 -->
                     <input class="modify_sys" type="button">
                     <!-- ios button -->
                     <label for="ios" class="ios forms_t">
-                        <input type="radio" id="radio-2-1" name="秦时明月" class="regular-radio big-radio" checked="true" value="秦时明月IOS">
+                        <input type="radio" id="radio-2-1" name="秦时明月" class="
+                         regular-radio big-radio" checked="true" value="秦时明月IOS">
                         <label for="radio-2-1"></label>
                         <div class="ios_tit">ios</div>
                         <br>
                         <!--  <input type="radio" name="秦时明月" id="ios" value="秦时明月IOS" checked="true" />ios -->
                     </label>
-                    <!-- android button -->
+                    <!-- android button  -->
                     <label for="android" class="android forms_t">
                         <input type="radio" id="radio-2-2" name="秦时明月" class="regular-radio big-radio" value="秦时明月android">
                         <label for="radio-2-2"></label>
@@ -81,7 +82,7 @@
                     </label>
                     </input>
                 </div>
-                <input type="button" class="but hov">
+                <input type="button" class="but hov" @click="submitCli">
                 <span id="iosNum" style="display:none"> </span>
                 <span id="andNum" style="display:none"></span>
                 <div id="getGift">已有<span id="allNum">2</span>人成功预约</div>
@@ -89,7 +90,107 @@
         </div>
     </form>
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/vue.js"></script>
+    <!-- // <script src="https://unpkg.com/vue/dist/vue.js"></script> -->
+    <!-- // <script type="text/javascript" src="js/index.js"></script> -->
+    <script type="text/javascript">
+    var apiUrl = "http://api.hulai.com";
+
+    function getNum(eventname, cal) {
+        var Nurl = apiUrl + "/h/api/event/getEventNum";
+        var data = {}
+        data.eventname = eventname;
+        $.post(Nurl, data, function(result) {
+            cal(result.data);
+        }, "json");
+    }
+    function refNum() {
+        getNum('秦时明月IOS', function(num) {
+            $('#iosNum').text(num);
+            bindAll();
+        })
+        getNum('秦时明月Android', function(num) {
+            $('#andNum').text(num);
+            bindAll();
+        })
+    }
+    function bindAll() {
+        var ios = $('#iosNum').text();
+        var and = $('#andNum').text();
+        var allNumber = Number(ios) + Number(and);
+        $('#allNum').text(allNumber);
+
+    }
+    refNum();
+    var app = new Vue({
+        el: '#xxx',
+        data: {
+            ok: false,
+            show: false,
+            // mengceng:{}
+        },
+        created: function() {
+            console.log('111');
+            // 当页面创建的时候
+        },
+        methods: {
+            yuyueCli: function() {
+                this.show = true;
+                
+                var height = document.documentElement.scrollHeight || document.body.scrollHeight;
+
+                // $('.yuyuew, form').attr('style', 'display:block');
+                $('.mengceng').html('<div style="height:' + height + 'px;opacity:0.6;width:100%;position:absolute;top:-50px;left:0px;background:rgb(0,0,0);"></div>')
+            },
+            butCli:function(){
+                this.ok = true;
+            },
+            submitCli: function() {
+                var phoNum = this.phone;
+                var checked = $('input[type="radio"]:checked').val();
+                console.log(checked);
+                var apiUrl = "http://api.hulai.com";
+                var url = apiUrl + "/h/api/event/saveRecord";
+                $.ajax({
+                        type: 'post',
+                        dataType: 'json',
+                        url: url,
+                        data: {
+                            'eventname': checked,
+                            'mobile': phoNum
+                        },
+                        success: function(data) {
+                            if (data.ret != 1) {
+                                alert(data.msg);
+                                return;
+                            } else {
+                                refNum()
+                                $('.gongxi').css('display', 'block');
+                                $('form').hide();
+                                this.show = false;
+                                this.ok = true;
+                            }
+
+                        }
+                    })
+            },
+            checkedMobile: function(phoNum) {
+                var myreg = /^(((13[0-9]{1})|(14[0-9]{1})|(15[0-9]{1})|(17[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+                if (!myreg.test(phoNum)) {
+                    alert('手机号填写错误');
+                    return false;
+                }
+                return true;
+            },
+            closeCli: function() {
+                this.show = false;
+                this.ok = false;
+                $('.gongxi').css('display', 'none')
+                $('.mengceng').html('');
+            }
+        }
+    });
+    </script>
 </body>
 
 </html>
